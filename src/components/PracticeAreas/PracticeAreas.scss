@@ -1,0 +1,135 @@
+@import '../../common-style/variables.scss';
+
+.PracticeAreas{
+    padding: 128px 0;
+    background-color: $Dark;
+
+    @media (max-width: 1200px) {
+        padding: 96px 0;
+    }
+
+    @media (max-width: 992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0 24px;
+            margin-bottom: 48px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: baseline;
+            }
+
+            .heading_otr{
+                width: 40%;
+                padding-right: 36px;
+                border-right: 2px solid$Grey_shade2;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    border: none;
+                    text-align: center;
+                    margin-bottom: 32px;
+                    padding: 0;
+                }
+
+                .heading{
+                    color: $White;
+                }
+
+                .icon{
+                    width: 96px;
+                    height: 45px;
+                    object-fit: contain;
+                    margin-top: 8px;
+                }
+            }
+
+            .desc_otr{
+                width: 60%;
+                padding-left: 36px;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .desc{
+                    color: $White;
+
+                    .desc_inr{
+                        color: $Primary_Color;
+                    }
+                }
+            }
+        }
+
+        .row_custom{
+            gap: 24px 0;
+        }
+    }
+}
+
+.PracticeBox_otr{
+
+    .PracticeBox_inr{
+        padding: 42px 32px 24px;
+        background-color: $bg1;
+
+        @media (max-width:1200px) {
+            padding: 36px 24px 24px;
+        }
+
+        @media (max-width:420px) {
+            padding: 32px 24px;
+        }
+
+        .box_heading{
+            color: $White;
+            transition: .3s;
+
+            &:hover{
+                color: $Primary_Color;
+            }
+        }
+
+        .desc{
+            color: $White;
+            margin: 16px 0 32px;
+        }
+
+        .icon_btn_main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 32px;
+            flex-wrap: wrap;
+            gap: 8px;
+            border-top: 2px solid $Grey_shade2;
+            .icon_otr{
+
+                svg{
+                    color: $Primary_Color;
+                }
+            }
+
+            .LearnMore_btn{
+
+                .tertiary_btn{
+                    padding: 14px 28px 14px 28px;
+                }
+            }
+        }
+    }
+}

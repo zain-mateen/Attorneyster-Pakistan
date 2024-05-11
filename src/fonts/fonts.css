@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'CormorantGaramond-Bold';
+    src: url('./CormorantGaramond-Bold.eot');
+    src: url('./CormorantGaramond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./CormorantGaramond-Bold.woff2') format('woff2'),
+        url('./CormorantGaramond-Bold.woff') format('woff'),
+        url('./CormorantGaramond-Bold.ttf') format('truetype'),
+        url('./CormorantGaramond-Bold.svg#CormorantGaramond-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit-Medium';
+    src: url('./Outfit-Medium.eot');
+    src: url('./Outfit-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./Outfit-Medium.woff2') format('woff2'),
+        url('./Outfit-Medium.woff') format('woff'),
+        url('./Outfit-Medium.ttf') format('truetype'),
+        url('./Outfit-Medium.svg#Outfit-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url('./Outfit-Bold.eot');
+    src: url('./Outfit-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./Outfit-Bold.woff2') format('woff2'),
+        url('./Outfit-Bold.woff') format('woff'),
+        url('./Outfit-Bold.ttf') format('truetype'),
+        url('./Outfit-Bold.svg#Outfit-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit-Regular';
+    src: url('./Outfit-Regular.eot');
+    src: url('./Outfit-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./Outfit-Regular.woff2') format('woff2'),
+        url('./Outfit-Regular.woff') format('woff'),
+        url('./Outfit-Regular.ttf') format('truetype'),
+        url('./Outfit-Regular.svg#Outfit-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LuxuriousScript-Regular';
+    src: url('./LuxuriousScript-Regular.eot');
+    src: url('./LuxuriousScript-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./LuxuriousScript-Regular.woff2') format('woff2'),
+        url('./LuxuriousScript-Regular.woff') format('woff'),
+        url('./LuxuriousScript-Regular.ttf') format('truetype'),
+        url('./LuxuriousScript-Regular.svg#LuxuriousScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

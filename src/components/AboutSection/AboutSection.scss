@@ -1,0 +1,226 @@
+@import '../../common-style/variables.scss';
+
+.AboutSection{
+    background-color: $bg1;
+    padding: 128px 0;
+
+    @media (max-width: 1200px) {
+        padding: 96px 0;
+    }
+
+    @media (max-width: 992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            justify-content: space-between;
+            align-items: center;
+            gap: 36px 0;
+
+            @media (max-width: 992px) {
+                flex-direction: column-reverse;
+            }
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    @media (max-width: 992px) {
+                        display: flex;
+                        align-items: center;
+                        gap: 24px 32px;
+                    }
+
+                    @media (max-width: 576px) {
+                        flex-direction: column;
+                    }
+
+                    .img_otr{
+                        overflow: hidden;
+
+                        &:not(:last-child){
+                            margin-bottom: 32px;
+
+                            @media (max-width: 992px) {
+                                margin: 0;
+                            }
+                        }
+
+                        .img{
+                            width: 100%;
+                            transition: .3s;
+
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+            .col_content_otr{
+
+                .col_content_inr{
+                    padding: 0 36px;
+
+                    @media (max-width: 992px) {
+                        padding: 0;
+                    }
+
+                    .heading{
+                        color: $White;
+                    }
+
+                    .img{
+                        margin: 8px 0 48px;
+                        width: 96px;
+                        height: 45px;
+                        object-fit: contain;
+                    
+                        @media (max-width: 768px) {
+                            margin: 8px 0 24px;
+                        }
+                    }
+
+                    .desc{
+                        color: $White;
+                    }
+
+                    .profile_main{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 16px;
+                        margin: 32px 0 48px;
+
+                        @media (max-width: 576px) {
+                            margin: 16px 0 24px;
+                        }
+
+                        .profile_otr{
+                            width: 56px;
+                            height: 56px;
+                            border-radius: 100%;
+                            overflow: hidden;
+
+                            .profile{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .content{
+
+                            .heading{
+                                color: $White;
+                                transition: .3s;
+
+                                &:hover{
+                                    color: $Primary_Color;
+                                }
+                            }
+                        }
+                    }
+
+                    .box_main{
+                        display: flex;
+                        align-items: center;
+                        gap: 24px 36px;
+                        border: none;
+                        padding: 0;
+
+                        @media (max-width: 1400px) {
+                            gap: 24px;
+                        }
+                        
+                        @media (max-width: 768px) {
+                            gap: 20px;
+                        }
+
+                        @media (max-width: 576px) {
+                            flex-wrap: wrap;
+                        }
+
+                        .box_otr{
+                            border: none;
+
+                            .box_inr{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 16px;
+                                padding: 32px 48px;
+                                background-color: $bg2;
+                                transition: .3s;
+
+                                @media (max-width: 1400px) {
+                                    padding: 24px 32px;
+                                }
+
+                                @media (max-width: 768px) {
+                                    padding: 16px 24px;
+                                }
+
+                                &:hover{
+                                    background-color: $Primary_Color;
+
+                                    .icon_otr{
+
+                                        svg{
+
+                                            path{
+                                                stroke: $White;
+                                            }
+
+                                            rect{
+                                                fill: $White;
+                                                stroke: $White;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .icon_otr{
+                                    transition: .3s;
+                                    
+                                    svg{
+                                        transition: .3s;
+
+                                        @media (max-width: 1400px) {
+                                            
+                                        }
+                                    }
+                                    
+                                }
+
+                                .content{
+
+                                    .text{
+                                        color: $White;
+                                    }
+                                }
+
+                                .heading_otr{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 80px;
+                                    height: 56px;
+                                    background-color: $bg1;
+                                    border-radius: 4px;
+                                    
+                                    .heading{
+                                        color: $White;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

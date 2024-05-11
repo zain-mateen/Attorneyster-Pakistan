@@ -1,0 +1,124 @@
+@import '../../common-style/variables.scss';
+
+.Team{
+    background-color: $White;
+    padding: 128px 0;
+   
+    @media (max-width:1200px) {
+        padding: 96px 0;
+    }
+   
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+   
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+    
+    .container{
+    
+        .wrapper{
+            text-align: center;
+            margin-bottom: 48px;
+    
+            .heading{
+                color: $bg1;
+            }
+    
+            .icon{
+                width: 96px;
+                height: 45px;
+                object-fit: contain;
+                margin-top: 16px;
+            }
+        }
+    
+        .row_custom{
+            gap: 36px 0;
+    
+            .col_box_otr{
+    
+                .col_box_inr{
+                    background-color: transparent;
+                    padding: 0;
+    
+                    .img_otr{
+                        position: relative;
+                        overflow: hidden;
+                        transition: .3s;
+    
+                        &:hover{
+    
+                            .hover_otr{
+                                bottom: 0;
+                            }
+                        }
+    
+                        .img{
+                            width: 100%;
+                        }
+    
+                        .hover_otr{
+                            position: absolute;
+                            left: 50%;
+                            bottom: -75px;
+                            transform: translateX(-50%);
+                            padding: 21px 48px;
+                            background-color: $White;
+                            transition: .3s;
+    
+                            .social_ul{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 0 16px;
+    
+                                .social_li{
+    
+                                    .social_a{
+    
+                                        svg{
+                                            color: $bg1;
+                                            transition: .3s;
+    
+                                            &:hover{
+                                                color: $Primary_Color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .content_otr{
+                        padding: 24px 0;
+                        text-align: center;
+                        margin: 0;
+    
+                        .heading{
+                            color: $bg1;
+                            transition: .3s;
+    
+                            &:hover{
+                                color: $Primary_Color;
+                            }
+                        }
+    
+                        .text{
+                            color: $Primary_Color;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .action_otr{
+            display: flex;
+            justify-content: center;
+            margin-top: 48px;
+        }
+    }
+}

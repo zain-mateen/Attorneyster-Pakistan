@@ -1,0 +1,619 @@
+@import '../../common-style/variables.scss';
+
+.header{
+    position: relative;
+    z-index: 999;
+    margin: auto;
+
+    .header_top_otr{
+
+        .container{
+
+            .header_top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 28px 0;
+                border-bottom: 2px solid $Grey_shade;
+    
+                @media (max-width: 1400px) {
+                    padding: 16px 0;
+                }
+    
+                .logo_menu_otr{
+                    display: flex;
+                    align-items: center;
+    
+                    @media (max-width: 991px) {
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+    
+                    .logo_otr{
+                        width: 280px;
+                        height: 58px;
+
+                        @media (max-width: 1400px) {
+                            width: 200px;
+                            height: 40px;
+                        }
+    
+                        @media (max-width: 991px) {
+                            width: 160px;
+                            height: 35px;
+                        }
+    
+                        .brand_logo{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+    
+                    .menu_icon_otr{
+                        display: none;
+                        cursor: pointer;
+                        transition: .3s;
+    
+                        @media (max-width: 991px) {
+                            display: block;
+                        }
+    
+                        &:hover{
+    
+                            svg{
+                                color: $Primary_Color;
+                            }
+                        }
+    
+                        svg{
+                            color: $White;
+                            transition: .3s;
+                        }
+                    }
+    
+                    .offcanvas{
+                        z-index: 999999;
+                        background-color: $bg1;
+    
+                        .logo_main{
+                            width: 100%;
+                            padding: 24px 0;
+                            border-bottom: 2px solid $Grey_shade;
+    
+                            .container_fluid{
+    
+                                .logo_otr{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    width: 100%;
+    
+                                    .logo_inr{
+                                        width: 160px;
+                                        height: 35px;
+                                        
+                                        .brand_logo{
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: contain;
+                                        }
+                                    }
+    
+                                    .close_icon_otr{
+                                        cursor: pointer;
+    
+                                        svg{
+                                            color: $White;
+                                            transition: .3s;
+    
+                                            &:hover{
+                                                color: $Primary_Color;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        .container_fluid{
+    
+                            .offcanvas-body{
+                                
+                                .accordion{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 12px;
+    
+                                    .menu_dropdown_Linkk{
+                                        color: $White;
+                                        transition: .3s;
+    
+                                        &:hover{
+                                            color: $Primary_Color;
+                                        }
+                                    }
+    
+                                    .accordion-item{
+                                        border: none;
+                                        background-color: transparent;
+    
+                                        .accordion-header{
+                                            border: none;
+    
+                                            .accordion-button{
+                                                padding: 8px 0 6px 0;
+                                                background-color: $bg1;
+                                                color: $White;
+                                                border-radius: 0;
+                                                border: none;
+    
+                                                &:hover{
+                                                    color: $Primary_Color;
+                                                }
+    
+                                                &::after{
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    background-image: url('../../img/arrow-down.png');
+                                                    background-size: contain;
+                                                    background-position: center;
+                                                }
+    
+                                                &:focus{
+                                                    box-shadow: none;
+                                                }
+    
+                                                &:not(.collapsed){
+                                                    box-shadow: none;
+                                                }
+                                            }
+                                        }
+    
+                                        .accordion-collapse{
+                                            border: none;
+    
+                                            .accordion-body{
+                                                background-color: $bg1;
+                                                padding: 10px 10px 0 10px;
+                                                border: none;
+    
+                                                .drop_ul{
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 8px;
+    
+                                                    .drop_li{
+    
+                                                        .menu_linkk{
+                                                            
+                                                            span{
+                                                                color: $White;
+                                                                transition: .3s;
+    
+                                                                &:hover{
+                                                                    color: $Primary_Color;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+    
+                            .social_ul{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 24px;
+                                margin: 24px 0;
+        
+                                .social_li{
+    
+                                    .social_a{
+                                        transition: .3s;
+        
+                                        &:hover{
+    
+                                            svg{
+                                                color: $Primary_Color;
+                                            }
+                                        }
+        
+                                        svg{
+                                            color: $White;
+                                            transition: .3s;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            .side_action_otr{
+                                width: 100%;
+        
+                                .explore_otr{
+    
+                                    .primary_btn{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .action_otr{
+                    @media (max-width: 991px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .header_bottom_otr{
+
+        .container{
+
+            .header_bottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 28px 0;
+                border-bottom: 2px solid $Grey_shade;
+    
+                @media (max-width: 1400px) {
+                    padding: 16px 0;
+                }
+    
+                @media (max-width: 991px) {
+                    display: none;
+                }
+    
+                .nav{
+    
+                    .menu_ul{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 32px;
+    
+                        .menu_li{
+                            position: relative;
+    
+                            &:hover {
+    
+                                .menu_dropdown_otr {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: scaleY(1);
+                                }
+                            }
+                            .menu_linkk{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 12px;
+                                cursor: pointer;
+                                transition: .3s;
+    
+                                &:hover{
+    
+                                    span{
+                                        color: $Primary_Color;
+                                    }
+    
+                                    svg{
+                                        color: $Primary_Color;
+                                    }
+                                }
+    
+                                span{
+                                    color: $White;
+                                    transition: .3s;
+                                }
+    
+                                svg{
+                                    color: $White;
+                                    transition: .3s;
+                                }
+                            }
+    
+                            .menu_dropdown_otr{
+                                position: absolute;
+                                left: 0;
+                                top: 22px;
+                                opacity: 0;
+                                visibility: hidden;
+                                transition: .3s;
+                                transform: scaleY(0);
+                                transform-origin: center top 0;
+                                padding-top: 20px;
+                                
+                                .menu_dropdown_inr{
+                                    width: 240px;
+                                    background-color: $White_10;
+                                    backdrop-filter: blur(25px);
+                                    padding: 12px 16px;
+                                    z-index: 5;
+                                    border-radius: 4px;
+    
+                                    .menu_dropdown_ul{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        gap: 16px;
+    
+                                        .menu_dropdown_li{
+                                            position: relative;
+                                            width: 100%;
+    
+                                            &:hover {
+    
+                                                .menu_otherdropdown_otr {
+                                                    opacity: 1;
+                                                    visibility: visible;
+                                                    transform: scaleY(1);
+                                                }
+                                            }
+    
+                                            .menu_dropdown_Linkk{
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                width: 100%;
+                                                cursor: pointer;
+    
+                                                &:hover {
+    
+                                                    span {
+                                                        color: $Primary_Color;
+                                                    }
+                            
+                                                    svg {
+                                                        color: $Primary_Color;
+                                                        transform: rotate(180deg);
+                                                    }
+                                                }
+                            
+                                                span {
+                                                    color: $White;
+                                                    transition: .3s;
+                                                }
+                            
+                                                svg {
+                                                    color: $White;
+                                                    transition: .3s;
+                                                }
+                                            }
+    
+                                            .menu_otherdropdown_otr {
+                                                position: absolute;
+                                                left: 210px;
+                                                bottom: -12px;
+                                                opacity: 0;
+                                                visibility: hidden;
+                                                transition: .3s;
+                                                transform: scaleY(0);
+                                                transform-origin: center bottom 0;
+                                                padding-top: 20px;
+                        
+                                                .menu_otherdropdown_inr {
+                                                    width: 240px;
+                                                    background-color: $White_10;
+                                                    backdrop-filter: blur(25px);
+                                                    padding: 12px 16px;
+                                                    z-index: 5;
+                                                    border-radius: 4px;
+                                                }
+                        
+                                                .menu_otherdropdown_ul {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: flex-start;
+                                                    gap: 12px;
+                                                }
+                        
+                                                .menu_otherdropdown_Linkk {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    width: 100%;
+                                                    cursor: pointer;
+                        
+                                                    &:hover {
+    
+                                                        span {
+                                                            color: $Primary_Color;
+                                                        }
+                        
+                                                        svg {
+                                                            color: $Primary_Color;
+                                                            transform: rotate(180deg);
+                                                        }
+                                                    }
+                        
+                                                    span {
+                                                        color: $White;
+                                                        transition: .3s;
+                                                    }
+                        
+                                                    svg {
+                                                        color: $White;
+                                                        transition: .3s;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .action_main{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 48px;
+    
+                    @media (max-width: 1200px) {
+                        gap: 0 24px;
+                    }
+    
+                    .phone_otr{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 12px;
+                        transition: .3s;
+    
+                        &:hover{
+    
+                            .icon_otr{
+                                background-color: $Primary_Color;
+                                border: 2px solid transparent;
+    
+                                svg{
+                                    color: $White;
+                                }
+                            }
+                        }
+    
+                        .icon_otr{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 62px;
+                            height: 62px;
+                            background-color: transparent;
+                            border: 2px solid $Primary_Color;
+                            border-radius: 100%;
+                            transition: .3s;
+
+                            @media (max-width: 1400px) {
+                                width: 52px;
+                                height: 52px;
+                            }
+    
+                            svg{
+                                color: $Primary_Color;
+                                transition: .3s;
+                            }
+                        }
+    
+                        .content{
+                            @media (max-width: 1200px) {
+                                display: none;
+                            }
+    
+                            .heading{
+                                color: $White;
+                            }
+    
+                            .text{
+                                color: $Primary_Color;
+                            }
+                        }
+                    }
+    
+                    .mail_otr{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 12px;
+                        transition: .3s;
+    
+                        &:hover{
+    
+                            .icon_otr{
+                                background-color: $Primary_Color;
+                                border: 2px solid transparent;
+    
+                                svg{
+                                    color: $White;
+                                }
+                            }
+                        }
+    
+                        .icon_otr{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 62px;
+                            height: 62px;
+                            background-color: transparent;
+                            border: 2px solid $Primary_Color;
+                            border-radius: 100%;
+                            transition: .3s;
+
+                            @media (max-width: 1400px) {
+                                width: 52px;
+                                height: 52px;
+                            }
+    
+                            svg{
+                                color: $Primary_Color;
+                                transition: .3s;
+                            }
+                        }
+    
+                        .content{
+                            @media (max-width: 1200px) {
+                                display: none;
+                            }
+    
+                            .heading{
+                                color: $White;
+                            }
+    
+                            .text{
+                                color: $Primary_Color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Header_inner{
+    position: relative;
+
+    .container{
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 128px 0;
+
+            @media (max-width:991px) {
+                padding: 72px 0;
+            }
+
+            @media (max-width:576px) {
+                padding: 48px 0;
+            }
+
+            .heading{
+                width: 550px;
+                max-width: 100%;
+                color: $White;
+            }
+
+            .icon{
+                color: $White;
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .bg{
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 270px);
+        left: 0;
+        top: -270px;
+    }
+}

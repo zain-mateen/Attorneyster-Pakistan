@@ -1,0 +1,235 @@
+@import '../../common-style/variables.scss';
+
+.HistorySection{
+    background-image: url('../../img/history-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 128px 0;
+
+    @media (max-width:1200px) {
+        padding: 96px 0;
+    }
+
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            background-color: rgba(31, 39, 50, 0.85);
+            padding: 72px 24px;
+            gap: 36px 0;
+
+            @media (max-width:576px) {
+                padding: 48px 8px;
+            }
+
+            .col_history_otr{
+
+                .col_history_inr{
+
+                    .wrapper{
+
+                        .heading{
+                            color: $White;
+                        }
+
+                        .icon{
+                            width: 96px;
+                            height: 45px;
+                            object-fit: contain;
+                            margin-top: 24px;
+                        }
+                    }
+
+                    .content_main{
+                        margin-top: 48px;
+
+                        .content_otr{
+
+                            &:not(:last-child){
+                                margin-bottom: 32px;
+                            }
+
+                            .heading{
+                                color: $Primary_Color;
+                            }
+
+                            .desc{
+                                color: $White;
+                                margin-top: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    height: 100%;
+                    width: 100%;
+
+                    .img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-fit: left;
+
+                        @media (max-width:992px) {
+                            display: none;
+                        }
+                    }
+
+                    .img2{
+                        display: none;
+                        width: 100%;
+                        object-fit: cover;
+
+                        @media (max-width:992px) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.col_experience_otr{
+
+    .col_experience_inr{
+
+        .wrapper{
+    
+            .heading{
+                color: $White;
+            }
+    
+            .icon{
+                width: 96px;
+                height: 45px;
+                object-fit: contain;
+                margin: 12px 0 32px;
+            }
+    
+            .desc{
+                color: $White;
+            }
+        }
+    
+        .action_otr{
+    
+            .secondary_btn{
+    
+                @media (max-width:320px) {
+                    padding: 18px 36px 18px 36px;
+                }
+            }
+        }
+    }
+}
+
+.Range_main{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 48px 0 40px;
+
+    .Range_otr{
+        
+        .content_otr{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px 12px;
+            flex-wrap: wrap;
+
+            .rangeSlider_heading{
+                color: $White !important;
+            }
+
+            .rangeSlider_value{
+                color: $White !important;
+            }
+        }
+
+        .Range_slider_otr{
+            width: 100%;
+            height: 4px;
+            background-color: $White !important;
+            border-radius: 4px;
+            position: relative;
+            margin-top: 12px;
+
+            .range_75{
+                width: 75%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $Primary_Color !important;
+                border-radius: 4px;
+
+                .circle{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    width: 18px;
+                    height: 18px;
+                    background-color: $Primary_Color !important;
+                    border-radius: 100%;
+                }
+            }
+
+            .range_80{
+                width: 80%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $Primary_Color !important;
+                border-radius: 4px;
+
+                .circle{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    width: 18px;
+                    height: 18px;
+                    background-color: $Primary_Color !important;
+                    border-radius: 100%;
+                }
+            }
+
+            .range_90{
+                width: 90%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: $Primary_Color !important;
+                border-radius: 4px;
+
+                .circle{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    width: 18px;
+                    height: 18px;
+                    background-color: $Primary_Color !important;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+

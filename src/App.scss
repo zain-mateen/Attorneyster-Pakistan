@@ -1,0 +1,247 @@
+@import './common-style/variables.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $bg1;
+
+  &::-webkit-scrollbar {
+      width: 10px;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+      text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container_fluid{
+  padding: 0 45px;
+  @media (max-width: 992px) {
+    padding: 0 15px;
+  }
+}
+
+br{
+  display: block;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.heading-h1{
+  font-size: $font-size-65px;
+  line-height: $line-height-74px;
+  font-family: $font-family-CormorantGaramond-Bold;
+
+  @media (max-width: 1200px) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.heading-h2{
+  font-size: $font-size-45px;
+  line-height: $line-height-52px;
+  font-family: $font-family-CormorantGaramond-Bold;
+
+  @media (max-width: 992px) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+.heading-h2-2{
+  font-size: $font-size-45px;
+  line-height: $line-height-52px;
+  font-family: $font-family-outfit-Bold;
+
+  @media (max-width: 576px) {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+.heading-name{
+  font-size: $font-size-45px;
+  line-height: $line-height-60px;
+  font-family: $font-family-LuxuriousScript-Regular;
+}
+.heading-name2{
+  font-size: $font-size-30px;
+  line-height: $line-height-36px;
+  font-family: $font-family-LuxuriousScript-Regular;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
+}
+
+.heading-h4{
+  font-size: $font-size-30px;
+  line-height: $line-height-36px;
+  font-family: $font-family-CormorantGaramond-Bold;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
+}
+
+.heading-lb{
+  font-size: $font-size-22px;
+  line-height: $line-height-28px;
+  font-family: $font-family-outfit-Bold;
+
+  @media (max-width: 1400px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.heading-l{
+  font-size: $font-size-22px;
+  line-height: $line-height-28px;
+  font-family: $font-family-outfit-Regular;
+
+  @media (max-width: 1400px) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.heading-mb{
+  font-size: $font-size-20px;
+  line-height: $line-height-28px;
+  font-family: $font-family-outfit-Bold;
+
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
+}
+.heading-m{
+  font-size: $font-size-20px;
+  line-height: $line-height-28px;
+  font-family: $font-family-outfit-Regular;
+
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 16px;
+  }
+}
+.heading-sb{
+  font-size: $font-size-18px;
+  line-height: $line-height-28px;
+  font-family: $font-family-outfit-Bold;
+
+  @media (max-width: 1400px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.heading-s{
+  font-size: $font-size-18px;
+  line-height: $line-height-28px;
+  font-family: $font-family-outfit-Regular;
+
+  @media (max-width: 1400px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+
+.loader{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $bg2;
+  background-size: cover;
+  background-position: center;
+  z-index: 9999999;
+  .spinner-grow {
+    width: 60px;
+    height: 60px;
+  }
+}

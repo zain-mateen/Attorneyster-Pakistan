@@ -1,0 +1,183 @@
+@import '../../common-style/variables.scss';
+
+.testimonails{
+    padding: 128px 0;
+    background-color: $bg1;
+    
+    @media (max-width: 1200px) {
+        padding: 96px 0;
+    }
+    
+    @media (max-width: 992px) {
+        padding: 72px 0;
+    }
+    
+    @media (max-width: 576px) {
+        padding: 48px 0;
+    }
+    
+    .container{
+    
+        .wrapper{
+            text-align: center;
+            margin-bottom: 48px;
+    
+            .heading{
+                color: $White;
+            }
+    
+            .icon{
+                margin-top: 24px;
+                width: 96px;
+                height: 45px;
+                object-fit: contain;
+            }
+        }
+    
+        .row_custom{
+            gap: 36px 0;
+    
+            .col_box_otr{
+    
+                .box_1{
+    
+                    .box_otr{
+    
+                        .box_inr{
+                            padding: 48px 32px;
+                            background-color: $bg3;
+                            border-radius: 2px 2px 2px 40px;
+    
+                            @media (max-width:1200px) {
+                                padding: 32px 24px;
+                            }
+    
+                            .icon{
+
+                            }   
+    
+                            .desc{
+                                color: $White;
+                                margin-top: 24px;
+                            }
+                        }
+                    }
+    
+                    .profile_main{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 16px;
+                        margin-top: 32px;
+    
+                        .profile_otr{
+                            width: 56px;
+                            height: 56px;
+                            border-radius: 100%;
+                            overflow: hidden;
+    
+                            .profile{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+    
+                        .content{
+    
+                            .heading{
+                                color: $White;
+                                transition: .3s;
+    
+                                &:hover{
+                                    color: $Primary_Color;
+                                }
+                            }
+    
+                            .text{
+                                color: $White;
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+                }
+    
+                .box_2{
+    
+                    @media (max-width:576px) {
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+    
+                    .box_otr{
+    
+                        .box_inr{
+                            padding: 48px 32px;
+                            background-color: $bg3;
+                            border-radius: 40px 2px 2px 2px;
+    
+                            @media (max-width:1200px) {
+                                padding: 32px 24px;
+                            }
+    
+                            .icon{
+
+                            }   
+    
+                            .desc{
+                                color: $White;
+                                margin-top: 24px;
+                            }
+                        }
+                    }
+    
+                    .profile_main{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 16px;
+                        margin-bottom: 32px;
+    
+                        @media (max-width:576px) {
+                            margin-bottom: 0;
+                            margin-top: 32px;
+                        }
+    
+                        .profile_otr{
+                            width: 56px;
+                            height: 56px;
+                            border-radius: 100%;
+                            overflow: hidden;
+    
+                            .profile{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+    
+                        .content{
+    
+                            .heading{
+                                color: $White;
+                                transition: .3s;
+    
+                                &:hover{
+                                    color: $Primary_Color;
+                                }
+                            }
+    
+                            .text{
+                                color: $White;
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+                }
+    
+                .col_box_inr{
+                    padding: 0;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@import '../../common-style/variables.scss';
+
+.ContactSection{
+    background-color: $bg1;
+    padding: 128px 0;
+
+    @media (max-width: 1200px) {
+        padding: 96px 0;
+    }
+
+    @media (max-width: 992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .row_custom{
+            align-items: center;
+            gap: 36px 0;
+
+            .col_contact_otr{
+
+                .col_contact_inr{
+                    padding-right: 36px;
+
+                    .heading{
+                        color: $White;
+                    }
+
+                    .desc{
+                        color: $White;
+                        margin: 24px 0 32px;
+                    }
+                }
+            }
+
+            .col_box_otr{
+
+                .col_box_inr{
+                    padding: 40px;
+                    background-color: $White;
+
+                    @media (max-width: 420px) {
+                        padding: 24px;
+                    }
+
+                    .box_inr{
+                        border: 10px solid $Grey;
+                        padding: 48px 36px;
+                        background-color: $White;
+
+                        @media (max-width: 420px) {
+                            border: 5px solid $Grey;
+                            padding: 32px 24px;
+                        }
+
+                        .heading{
+                            color: $Dark;
+                        }
+
+                        .desc{
+                            color: $Grey2;
+                            margin: 16px 0 36px;
+                        }
+
+                        .contact_main{
+                            display: flex;
+                            align-items: center;
+                            gap: 16px 12px;
+                            transition: .3s;
+
+                            @media (max-width: 420px) {
+                                flex-direction: column;
+                                align-items: baseline;
+                            }
+
+                            &:hover{
+
+                                .icon_otr{
+                                    background-color: transparent;
+                                    border: 2px solid $Primary_Color;
+
+                                    svg{
+                                        color: $Primary_Color;
+                                    }
+                                }
+
+                                .content{
+
+                                    .text{
+
+                                    }
+
+                                    .heading{
+                                        color: $Primary_Color;
+                                    }
+                                }
+                            }
+
+                            .icon_otr{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 64px;
+                                height: 64px;
+                                background-color: $Primary_Color;
+                                border: 2px solid transparent;
+                                transition: .3s;
+
+                                svg{
+                                    color: $White;
+                                    transition: .3s;
+                                }
+                            }
+
+                            .content{
+
+                                .text{
+                                    color: $bg1;
+                                    transition: .3s;
+                                }
+
+                                .heading{
+                                    color: $bg2;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

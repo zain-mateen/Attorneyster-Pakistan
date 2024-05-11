@@ -1,0 +1,93 @@
+@import '../../common-style/variables.scss';
+
+.HeroSection{
+    position: relative;
+
+    .pos_img{
+        position: absolute;
+        top: -270px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 270px);
+    }
+
+    .container{
+
+        .row_custom{
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+
+            .col_content_otr{
+
+                .col_content_inr{    
+                    padding: 136px 0 172px;
+
+
+                    @media (max-width:1500px) {
+                        padding: 128px 0 150px;
+                    }
+
+                    @media (max-width:1300px) {
+                        padding:36px 0;
+                    }
+
+                    .icon{
+                        width: 96px;
+                        height: 45px;
+                        object-fit: contain;
+                    }
+
+                    .heading{
+                        color: $White;
+                        margin: 16px 0;
+                    }
+
+                    .desc{
+                        color: $Primary_Color;
+                    }
+
+                    .action_otr{
+                        display: inline-flex;
+                        margin-top: 24px;
+                    }
+                }
+            }
+
+            .col_img_otr{
+
+                .col_img_inr{
+                    height: 100%;
+
+                    @media (max-width:992px) {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                        object-position: bottom;
+
+                        @media (max-width:992px) {
+                            width: 65%;
+                        }
+
+                        @media (max-width:768px) {
+                            width: 75%;
+                        }
+
+                        @media (max-width:576px) {
+                            width: 90%;
+                        }
+
+                        @media (max-width:420px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
