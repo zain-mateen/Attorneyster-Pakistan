@@ -1,0 +1,94 @@
+@import '../../common-style/variables.scss';
+
+.AboutValue{
+    background-color: $bg1;
+    padding-bottom: 128px;
+
+    @media (max-width:992px) {
+        padding-bottom: 72px;
+    }
+
+    @media (max-width:576px) {
+        padding-bottom: 48px;
+    }
+
+    .container{
+
+        .row_custom{
+            gap: 36px 0;
+            
+            .col_content_otr{
+                
+                .col_content_inr{
+                    
+                    .heading{
+                        color: $White;
+                    }
+                    
+                    .icon{
+                        width: 96px;
+                        height: 45px;
+                        object-fit: contain;
+                        margin: 16px 0 32px;
+                    }
+                    
+                    .desc{
+                        color: $White;
+                    }
+                }
+            }
+
+            .col_box_otr{
+
+            }
+        }
+    }
+}
+
+.AboutBox_otr{
+
+    &:not(:last-child){
+        margin-bottom: 36px;
+    }
+
+    .AboutBox_inr{
+        background-color: $bg3;
+        padding: 56px 48px;
+
+        @media (max-width: 1200px) {
+            padding: 36px 28px;
+        }
+    
+        @media (max-width:576px) {
+            padding: 32px 24px;
+        }
+    
+        .icon_otr{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            background-color: $bg1;
+            border-radius: 100%;
+    
+            svg{
+                color: $Primary_Color;
+            }
+        }
+    
+        .AboutBox_heading{
+            color: $White;
+            margin: 24px 0 8px;
+            transition: .3s;
+    
+            &:hover{
+                color: $Primary_Color;
+            }
+        }
+    
+        .desc{
+            color: $White;
+        }
+    }
+}
