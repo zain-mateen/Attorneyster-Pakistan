@@ -1,0 +1,269 @@
+@import '../../common-style/variables.scss';
+
+
+.Detail{
+    padding: 128px 0;
+    
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+    
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+    
+    .container{
+    
+        .img_otr{
+            margin-bottom: 48px;
+
+            @media (max-width: 576px) {
+                margin-bottom: 32px;
+            }
+    
+            .img{
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+    
+                @media (max-width:1200px) {
+                    height: 450px;
+                }
+    
+                @media (max-width:992px) {
+                    height: 300px;
+                }
+    
+                @media (max-width:576px) {
+                    height: 230px;
+                }
+    
+                @media (max-width:420px) {
+                    height: 150px;
+                }
+            }
+        }
+    
+        .row_custom{
+            gap: 36px 0;
+    
+            .col_content_otr{
+    
+                .col_content_inr{
+    
+                    .content_otr{
+    
+                        .heading{
+                            color: $White;
+                            margin: 12px 0;
+                        }
+    
+                        .desc{
+                            color: $White;
+                            margin: 16px 0 0 0;
+                        }
+                    }
+    
+                    .list_ul{
+                        margin: 32px 0 40px;
+    
+                        .list_li{
+                            display: grid;
+                            align-items: center;
+                            grid-template-columns: auto 1fr;
+                            gap: 0 16px;
+    
+                            &:not(:last-child){
+                                margin-bottom: 12px;
+                            }
+
+                            @media (max-width: 576px) {
+                                align-items: baseline;
+                                gap: 0 12px;
+                            }
+    
+                            .dot{
+                                width: 5px;
+                                height: 5px;
+                                background-color: $White;
+                                border-radius: 100%;
+                            }
+    
+                            .list_text{
+                                color: $White;
+                            }
+                        }
+                    }
+    
+                    .list2_ul{
+                        margin: 32px 0 40px;
+    
+                        .list2_li{
+    
+                            &:not(:last-child){
+                                margin-bottom: 12px;
+                            }
+    
+                            .list2_text{
+                                color: $White;
+                            }
+                        }
+                    }
+    
+                    .justice_main{
+    
+                        .img_otr{
+                            margin-bottom: 16px;
+    
+                            .justice_img{
+                                width: 100%;
+                            }
+                        }
+    
+                        .heading{
+                            text-align: center;
+                            color: $Primary_Color;
+                        }
+                    }
+                }   
+            }
+    
+            .col_box_otr{
+    
+                .col_box_inr{
+                    background-color: transparent;
+                    padding: 0;
+    
+                    .box_otr{
+    
+                        &:not(:last-child){
+                            margin-bottom: 30px;
+                        }
+    
+                        .Detailbox_inr{
+                            padding: 48px 32px;
+                            background-color: $White;
+    
+                            @media (max-width:420px) {
+                                padding: 32px 24px;
+                            }
+    
+                            .heading{
+                                color: $bg1;
+                            }
+    
+                            .text_ul{
+                                margin: 28px 0 48px;
+    
+                                .text_li{
+                                    padding-bottom: 24px;
+                                    border-bottom: 1px solid $Grey4;
+    
+                                    &:not(:last-child){
+                                        margin-bottom: 16px;
+                                    }
+    
+                                    .heading{
+                                        color: $bg1;
+                                    }
+    
+                                    .text{
+                                        color: $Grey2;
+                                        margin-top: 4px;
+                                    }
+                                }
+                            }
+    
+                            .result_main{
+                                padding: 20px;
+                                background-color: $Primary_Color;
+    
+                                .result_otr{
+                                    display: flex;
+                                    justify-content: center;
+                                    border: 1px solid $Black;
+                                    padding: 28px 24px;
+    
+                                    .result_inr{
+    
+                                        .text{
+                                            color: $bg1;
+                                        }
+    
+                                        .heading{
+                                            color: $bg1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+    
+                        .experience_inr{
+                            background-image: url(../../img//experience-bg.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            padding: 56px 48px;
+    
+                            @media (max-width:420px) {
+                                padding: 32px 24px;
+                            }
+    
+                            .heading{
+                                color: $White;
+                            }
+    
+                            .text{
+                                color: $Primary_Color;
+                                margin: 20px 0 15px;
+                            }
+    
+                            .desc{
+                                color: $White;
+                            }
+    
+                            .action_otr{
+                                margin-top: 20px;
+                            }
+                        }
+    
+                        .CaseResult_inr{
+                            padding: 56px 48px;
+                            background-color: $Primary_Color;
+    
+                            @media (max-width:420px) {
+                                padding: 32px 24px;
+                            }
+    
+                            .heading{
+                                color: $bg1;
+                            }
+    
+                            .text{
+                                color: $bg1;
+                                margin: 20px 0 15px;
+                            }
+    
+                            .desc{
+                                color: $bg1;
+                            }
+    
+                            .action_otr{
+                                margin-top: 20px;
+
+                                .tertiary_btn{
+                                    border: 2px solid transparent;
+                                    transition: .3s;
+
+                                    &:hover{
+                                        border: 2px solid $bg1;
+                                        color: $bg1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

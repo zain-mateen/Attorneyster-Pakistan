@@ -1,0 +1,106 @@
+@import '../../common-style/variables.scss';
+
+
+.caseBox_main{
+    padding: 128px 0;
+    
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+    
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+    
+    .container{
+    
+        .row_custom{
+            gap: 36px 0;
+    
+            .col_box_otr{
+    
+                .col_box_inr{
+                    background-color: $Dark;
+                    padding: 0;
+    
+                    .img_otr{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        overflow: hidden;
+                        height: 300px;
+                        width: 100%;
+                        transition: .3s;
+    
+                        @media (max-width:576px) {
+                            height: 230px;
+                        }
+    
+                        &:hover{
+    
+                            .img{
+                                transform: scale(1.1);
+                            }
+                        }
+    
+                        .img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            transition: .3s;
+                        }
+    
+                        .img_center_btn{
+                            
+                        }
+                    }
+    
+                    .content_otr{
+                        padding: 48px 36px;
+                        margin: 0;
+    
+                        @media (max-width: 576px) {
+                            padding: 32px 24px;
+                        }
+    
+                        .date{
+                            color: $Primary_Color;
+                        }
+    
+                        .heading{
+                            color: $White;
+                            margin: 10px 0 20px;
+                            transition: .3s;
+    
+                            &:hover{
+                                color: $Primary_Color;
+                            }
+                        }
+
+                        .desc{
+                            color: $White;
+                        }
+
+                        .action_otr{
+                            margin-top: 32px;
+
+                            .read_btn{
+                                display: inline-flex;
+                                color: $Primary_Color;
+                                text-decoration: underline;
+                                transition: .3s;
+
+                                &:hover{
+                                    color: $White;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
