@@ -1,0 +1,102 @@
+@import '../../common-style/variables.scss';
+
+
+.PracticeArea{
+    padding: 128px 0;
+    border-bottom: 1px solid $Grey3;
+
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .detail_main{
+
+            .img_otr{
+
+                .img{
+                    width: 100%;
+                    height: 800px;
+
+                    @media (max-width:1500px) {
+                        height: 600px;
+                    }
+
+                    @media (max-width:1200px) {
+                        height: 500px;
+                    }
+
+                    @media (max-width:992px) {
+                        height: 300px;
+                    }
+
+                    @media (max-width:576px) {
+                        height: 200px;
+                    }
+                }
+            }
+
+            .content_otr{
+                padding-top: 36px;
+
+                @media (max-width:576px) {
+                    padding-top: 8px;
+                }
+
+                .heading{
+                    color: $White;
+                    margin: 40px 0 24px;
+                }
+
+                .desc{
+                    color: $White;
+                }
+
+                .list_ul{
+                    margin: 32px 0 40px;
+
+                    .list_li{
+                        display: flex;
+                        align-items: center;
+                        gap: 0 16px;
+
+                        &:not(:last-child){
+                            margin-bottom: 12px;
+                        }
+
+                        .dot{
+                            width: 5px;
+                            height: 5px;
+                            background-color: $White;
+                            border-radius: 100%;
+                        }
+
+                        .list_text{
+                            color: $White;
+                        }
+                    }
+                }
+
+                .list2_ul{
+                    margin: 32px 0 40px;
+
+                    .list2_li{
+
+                        &:not(:last-child){
+                            margin-bottom: 12px;
+                        }
+ 
+                        .list2_text{
+                            color: $White;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
