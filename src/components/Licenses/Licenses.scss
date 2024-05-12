@@ -1,0 +1,120 @@
+@import '../../common-style/variables.scss';
+
+.Lisences_main{
+    padding: 128px 0;
+    
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+    
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+    
+    .container{
+    
+        .content_otr{
+            display: flex;
+            gap: 36px;
+    
+            @media (max-width:576px) {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            &:not(:last-child){
+                margin-bottom: 96px;
+            }
+    
+            .heading_main{
+                width: 40%;
+    
+                @media (max-width:576px) {
+                    width: 100%;
+                    text-align: center;
+                }
+    
+                .heading{
+                    color: $White;
+                }
+    
+                .icon{
+                    width: 96px;
+                    height: 45px;
+                    object-fit: contain;
+                    margin-top: 16px;
+                }
+            }
+    
+            .desc_main{
+                width: 60%;
+    
+                @media (max-width:576px) {
+                    width: 100%;
+                }
+    
+                .desc{
+                    color: $White;
+    
+                    .desc_inr{
+                        color: $Primary_Color;
+                    }
+    
+                    &:not(:last-child){
+                        margin-bottom: 24px;
+                    }
+                }
+    
+                .desc_ul{
+    
+                    .desc_li{
+    
+                        &:not(:last-child){
+                            margin-bottom: 56px;
+                        }
+    
+                        .desc_heading_main{
+                            display: flex;
+                            align-items: center;
+    
+                            .heading{
+                                color: $Primary_Color;
+                            }
+    
+                            .text{
+                                color: $Primary_Color;
+                                margin-left: 8px;
+                            }
+                        }
+    
+                        .img_ul{
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 0 12px;
+    
+                            .img_li{
+                                display: flex;
+                                align-items: center;
+                                gap: 0 4px;
+    
+                                .img_a{
+                                    color: $White;
+                                    transition: .3s;
+    
+                                    &:hover{
+                                        color: $Primary_Color;
+                                    }
+                                }
+    
+                                .comma{
+                                    color: $White;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

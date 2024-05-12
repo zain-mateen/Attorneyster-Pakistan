@@ -10,6 +10,10 @@ import CasesPage from './components/CasesPage/CasesPage';
 import CaseSinglePage from './components/CasesSinglePage/CasesSinglePage';
 import PricingPage from './components/PricingPage/PricingPage';
 import TestimonialsPage from './components/TestimonialsPage/TestimonialsPage';
+import Licenses from './components/Licenses/Licenses';
+import Changelog from './components/Changelog/Changelog';
+import PasswordProtection from './components/PasswordProtection/PasswordProtection';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 import Footer from './components/Footer/Footer';
 
 import './App.scss';
@@ -31,6 +35,10 @@ function App() {
         <Route path='/casesInner' element={<CaseSinglePage />} />        
         <Route path='/packages' element={<PricingPage />} />
         <Route path='/testimonials' element={<TestimonialsPage />} />
+        <Route path='/lisences' element={<Licenses />} />
+        <Route path='/changelog' element={<Changelog />} />
+        <Route path='/password_protection' element={<PasswordProtection />} />
+        <Route path='/error' element={<ErrorPage />} />
       </Routes>
       <Footer />
     </div>

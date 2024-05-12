@@ -1,0 +1,60 @@
+@import '../../common-style/variables.scss';
+
+
+
+.box_main{
+    border-bottom: 2px solid $Grey3;
+    padding: 128px 0;
+
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            padding: 72px 96px;
+            background-color: $Primary_Color;
+
+            @media (max-width:992px) {
+                padding: 48px 24px;
+            }
+
+            @media (max-width:576px) {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                padding: 32px 24px;
+            }
+
+            @media (max-width:576px) {
+                display: flex;
+                flex-direction: column;
+                padding: 32px 24px;
+            }
+
+            .box_otr{
+                display: grid;
+                place-items: center;
+                width: 94px;
+                height: 94px;
+                background-color: $bg1;
+
+                .heading{
+                    color: $White;
+                }
+            }
+
+            .text{
+                color: $bg1
+            }
+        }
+    }
+}

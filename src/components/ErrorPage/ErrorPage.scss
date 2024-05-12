@@ -1,0 +1,64 @@
+@import '../../common-style/variables.scss';
+
+.ErrorPage{
+    background-color: $bg1;
+    padding-top: 128px;
+
+    @media (max-width: 992px) {
+        padding-top: 72px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 48px;
+    }
+
+    .container_fluid{
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .img_otr{
+                width: 30%;
+
+                @media (max-width: 1200px) {
+                    width: 40%;
+                }
+
+                @media (max-width: 768px) {
+                    width: 50%;
+                }
+
+                @media (max-width: 576px) {
+                    width: 60%;
+                }
+
+                @media (max-width: 420px) {
+                    width: 75%;
+                }
+
+                .img{
+                    width: 100%;
+                }
+            }
+
+            .icon{
+                width: 96px;
+                height: 45px;
+                object-fit: contain;
+                margin: 32px 0;   
+            }
+
+            .heading{
+                color: $White;
+            }
+
+            .desc{
+                color: $White;
+                margin: 16px 0 42px;
+            }
+        }
+    }
+}
