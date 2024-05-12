@@ -48,7 +48,7 @@ const FAQSection = () => {
                     FAQBox_Desc="There are certain matters that are fairly straightforward or not unduly difficult to learn and, therefore, do not require the services of an attorney, like writing a business plan, researching and picking a name for your business or reserving a domain."
                 />
             </div>
-            q<Consultation />
+            <Consultation />
         </div>
     </section>
     </>

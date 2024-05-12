@@ -20,6 +20,9 @@
             .col_content_otr{
                 
                 .col_content_inr{
+                    position: sticky;
+                    top: 16px;
+                    left: 0;
                     
                     .heading{
                         color: $White;
