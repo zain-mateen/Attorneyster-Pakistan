@@ -9,6 +9,7 @@ import PracticeAreaDetail from './components/PracticeAreaSingle/PracticeAreaSing
 import CasesPage from './components/CasesPage/CasesPage';
 import CaseSinglePage from './components/CasesSinglePage/CasesSinglePage';
 import PricingPage from './components/PricingPage/PricingPage';
+import TestimonialsPage from './components/TestimonialsPage/TestimonialsPage';
 import Footer from './components/Footer/Footer';
 
 import './App.scss';
@@ -29,6 +30,7 @@ function App() {
         <Route path='/cases' element={<CasesPage />} />
         <Route path='/casesInner' element={<CaseSinglePage />} />        
         <Route path='/packages' element={<PricingPage />} />
+        <Route path='/testimonials' element={<TestimonialsPage />} />
       </Routes>
       <Footer />
     </div>
