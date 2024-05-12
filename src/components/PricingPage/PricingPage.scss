@@ -1,0 +1,139 @@
+@import '../../common-style/variables.scss';
+
+.OfferBanner{
+    padding: 128px 0;
+    
+    @media (max-width:992px) {
+        padding: 72px 0;
+    }
+    
+    @media (max-width:576px) {
+        padding: 48px 0;
+    }
+    
+    .container{
+    
+        .wrapper{
+            background-image: url('../../img/pricing-img.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 112px 72px;
+    
+            @media (max-width:992px) {
+                padding: 96px 56px;
+            }
+    
+            @media (max-width:576px) {
+                padding: 48px 24px;
+            }
+    
+            .icon_otr{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 86px;
+                height: 86px;
+                background-color: $bg1;
+                border-radius: 100%;
+            }
+    
+            .heading{
+                color: $bg1;
+                margin: 12px 0 8px;
+            }
+    
+            .desc{
+                color: $bg1;
+            }
+        }
+    }
+}
+
+.Pricing_main{
+    
+    .container{
+    
+        .wrapper{
+            text-align: center;
+            margin-bottom: 48px;
+    
+            .heading{
+                color: $White;
+            }
+    
+            .icon{
+                width: 96px;
+                height: 45px;
+                object-fit: contain;
+                margin-top: 16px;
+            }
+        }
+    
+        .row_custom{
+            gap: 36px 0;
+        }
+    }
+}
+
+.Plan_otr{
+    
+    .Plan_inr{
+        background-color: $Dark;
+    
+        .content{
+            padding: 40px 24px 42px;
+            text-align: center;
+            border-bottom: 1px solid $Grey_shade2;
+    
+            .heading{
+                color: $White;
+            }
+    
+            .text{
+                color: $Primary_Color;
+                margin-top: 8px;
+            }
+        }
+    
+        .Price_List_Btn{
+            padding: 30px 24px 40px;
+    
+            .Price_main{
+                padding-bottom: 30px;
+                text-align: center;
+                border-bottom: 1px solid $Grey_shade2;
+    
+                .heading{
+                    color: $Primary_Color;
+                }
+    
+                .case_btn{
+                    display: inline-flex;
+                    padding: 6px 28px 7px 28px;
+                    background-color: $bg1;
+                    margin-top: 16px;
+                    color: $White;
+                }
+            }
+ 
+            .plan_ul{
+                margin: 30px 0;
+ 
+                .plan_li{
+                    padding: 24px 0;
+                    border-bottom: 1px solid $Grey_shade2;
+                    color: $White;
+                    text-align: center;
+                }
+            }
+ 
+            .action_otr{
+ 
+                .border2_btn{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
