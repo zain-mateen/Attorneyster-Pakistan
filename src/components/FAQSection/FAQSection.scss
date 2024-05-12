@@ -1,0 +1,100 @@
+@import '../../common-style/variables.scss';
+
+.FAQSection_main{
+    background-color: $White;
+    padding: 128px 0;
+
+    @media (max-width: 992px) {
+        padding: 72px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 48px 0;
+    }
+
+    .container{
+
+        .wrapper{
+            text-align: center;
+            margin-bottom: 48px;
+
+            .heading{
+                color: $bg1;
+            }
+
+            .icon{
+                width: 96px;
+                height: 45px;
+                object-fit: contain;
+                margin-top: 12px;
+            }
+        }
+
+        .row_custom{
+            gap: 36px 0;
+        }
+    }
+}
+
+.FAQBox_otr{
+
+    .FAQBox_inr{
+        padding-bottom: 48px;
+        border-bottom: 1px solid $Grey4;
+
+        @media (max-width:576px) {
+            padding-bottom: 32px;
+        }
+
+        .heading{
+            color: $bg1;
+        }
+
+        .desc{
+            color: $Grey2;
+            margin-top: 16px;
+        }
+    }
+}
+
+.Consultation_main{
+    padding-top: 128px;
+
+    @media (max-width: 992px) {
+        padding-top: 72px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 48px;
+    }
+
+    .container{
+
+        .wrapper{
+            text-align: center;
+
+            .heading{
+                color: $bg1;
+            }
+
+            .desc{
+                color: $Grey2;
+                width: 500px;
+                max-width: 100%;
+                margin: 16px auto 40px;
+            }
+
+            .action_otr{
+
+                .secondary_btn{
+                    border: 2px solid transparent;
+
+                    &:hover{
+                        border: 2px solid $Primary_Color;
+                        color: $Primary_Color;
+                    }
+                }
+            }
+        }
+    }
+}

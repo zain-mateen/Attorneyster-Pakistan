@@ -1,6 +1,7 @@
 import Header from './components/Header/Header';
 import LandingPage from './components/LandingPage/LandingPage';
 import AboutPage from './components/AboutPage/AboutPage';
+import ContactPage from './components/ContactPage/ContactPage';
 import Footer from './components/Footer/Footer';
 
 import './App.scss';
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/about' element={<AboutPage />} />
+        <Route path='/auth' element={<ContactPage />} />
       </Routes>
       <Footer />
     </div>
