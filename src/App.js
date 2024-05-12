@@ -47,7 +47,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/about' element={<AboutPage />} />
-        <Route path='/auth' element={<ContactPage />} />
+        <Route path='/contact' element={<ContactPage />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/blogdetail' element={<BlogDetail />} />
         <Route path='/practiceareapage' element={<PracticeAreaPage />} />
