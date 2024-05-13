@@ -1,8 +1,5 @@
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
-import axios from 'axios';
-import { Spinner } from 'reactstrap';
 
 import Header from './components/Header/Header';
 import LandingPage from './components/LandingPage/LandingPage';
@@ -25,24 +22,8 @@ import Footer from './components/Footer/Footer';
 import './App.scss';
 
 function App() {
-
-  const [data, setData] = useState([]);
-  const [IsLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    axios.get('http://localhost:3000/')
-      .then((re) => {
-        setIsLoading(false)
-        setData(re.data.result)
-      })
-  }, [])
-
   return (
     <div>
-      {IsLoading && (
-        <div className="loader">
-          <Spinner color="$Primary_Color" type="grow" />
-        </div>
-      )}
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />} />
