@@ -1,9 +1,9 @@
 import React from 'react';
+
 import './Header.scss';
 
 import Icon from '../../img/icon2.svg';
 import bg from '../../img/practice-bg.png';
-
 
 function HeaderInner(props) {
   return (

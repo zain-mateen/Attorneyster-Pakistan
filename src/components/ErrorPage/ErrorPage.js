@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
+import ThemeBtn from '../ThemeBtn/ThemeBtn';
+
 import './ErrorPage.scss';
 
-import ErrorImage from '../../img/404.svg';
 import Icon from '../../img/icon2.svg';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
-import { Link } from 'react-router-dom';
+import ErrorImage from '../../img/404.svg';
 
 const ErrorPage = () => {
   return (

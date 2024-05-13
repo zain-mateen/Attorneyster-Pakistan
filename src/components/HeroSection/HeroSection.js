@@ -1,13 +1,13 @@
 import React from 'react'
-import './HeroSection.scss';
+import { Link } from 'react-router-dom';
+
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
 
+import './HeroSection.scss';
 
 import BackgroundImage from '../../img/landing-hero-bg.png';
 import Icon from '../../img/icon.svg';
 import Image from '../../img/landing-hero-img.png';
-import { Link } from 'react-router-dom';
-
 
 const HeroSection = () => {
   return (

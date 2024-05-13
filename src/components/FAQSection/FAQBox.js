@@ -1,6 +1,6 @@
 import React from 'react'
-import './FAQSection.scss';
 
+import './FAQSection.scss';
 
 function FAQBox(props) {
   return (

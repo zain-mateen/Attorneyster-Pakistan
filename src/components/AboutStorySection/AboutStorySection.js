@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 import './AboutStorySection.scss';
 
 import Icon from '../../img/icon2.svg';
 import AboutStoryImage1 from '../../img/About-story-img1.png';
 import AboutStoryImage2 from '../../img/About-story-img2.png';
 import AboutStoryImage3 from '../../img/About-story-img3.png';
-
 
 const AboutStorySection = () => {
   return (

@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-import './LandingPage.scss';
 import AboutSection from '../AboutSection/AboutSection';
 import Testimonials from '../Testimonials/Testimonials';
 import ContactSection from '../ContactSection/ContactSection';
@@ -12,10 +11,11 @@ import BlogSection from '../BlogSection/BlogSection';
 import HeroSection from '../HeroSection/HeroSection';
 import HistorySection from '../HistorySection/HistorySection';
 
+import './LandingPage.scss';
 
 const LandingPage = () => {
   return (
-    <div>
+    <Fragment>
         <HeroSection />
         <AboutSection />
         <PracticeAreas />
@@ -26,7 +26,7 @@ const LandingPage = () => {
         <ContactSection />
         <ContactFormSection />
         <BlogSection />
-    </div>
+    </Fragment>
   )
 }
 

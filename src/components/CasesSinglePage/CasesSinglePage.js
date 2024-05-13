@@ -1,18 +1,19 @@
-import React from 'react'
-import './CasesSinglePage.scss';
+import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom';
+
 import PartnerSlider from '../PartnerSection/PartnerSlider';
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
 
+import './CasesSinglePage.scss';
 
 import img from '../../img/cases-img2.png';
 import justiceImg from '../../img/justice-img.png';
 import HeaderInner from '../Header/HeaderInner';
-import { Link } from 'react-router-dom';
 
 
 const CasesSinglePage = () => {
   return (
-    <>
+    <Fragment>
         <HeaderInner 
           WrapperHeading="Car Accident"
         />
@@ -188,7 +189,7 @@ const CasesSinglePage = () => {
 
         <PartnerSlider />
         
-    </>
+    </Fragment>
   )
 }
 

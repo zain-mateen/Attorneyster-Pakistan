@@ -1,4 +1,4 @@
-import { React } from 'react';
+import { Fragment, React } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header/Header';
@@ -23,7 +23,7 @@ import './App.scss';
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />} />
@@ -43,7 +43,7 @@ function App() {
         <Route path='/error' element={<ErrorPage />} />
       </Routes>
       <Footer />
-    </div>
+    </Fragment>
   )
 }
 

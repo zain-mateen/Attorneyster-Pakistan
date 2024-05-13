@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+
+import { FacebookLogo, InstagramLogo, PinterestLogo, TwitterLogo } from '@phosphor-icons/react';
+
 import './Team.scss';
 
 import Icon from '../../img/icon2.svg';
@@ -8,7 +11,6 @@ import Creator2 from '../../img/Creator-main2.png';
 import Creator3 from '../../img/Creator-main3.png';
 import Creator4 from '../../img/Creator-main4.png';
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
-import { FacebookLogo, InstagramLogo, PinterestLogo, TwitterLogo } from '@phosphor-icons/react';
 
 const Team = () => {
   return (

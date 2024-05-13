@@ -1,13 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
+import { EnvelopeOpen, FacebookLogo, InstagramLogo, List, PhoneCall, PinterestLogo, Plus, TwitterLogo, X } from '@phosphor-icons/react';
+
+import ThemeBtn from '../ThemeBtn/ThemeBtn';
+
 import './Header.scss';
 
 import BrandLogo from '../../img/brand-logo.png';
-import { Link } from 'react-router-dom';
-
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
-import { EnvelopeOpen, FacebookLogo, InstagramLogo, List, PhoneCall, PinterestLogo, Plus, TwitterLogo, X } from '@phosphor-icons/react';
-
-
 
 const Header = () => {
     return (

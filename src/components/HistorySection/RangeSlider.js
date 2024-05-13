@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './HistorySection.scss';
 
 function RangeSlider(props) {

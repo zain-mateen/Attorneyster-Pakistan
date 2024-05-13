@@ -1,16 +1,17 @@
-import React from 'react'
-import './ContactPage.scss';
+import React, { Fragment } from 'react'
+
+import { Envelope, Phone } from 'phosphor-react';
+
 import HeaderInner from '../Header/HeaderInner';
 import FAQSection from '../FAQSection/FAQSection';
-import { Envelope, Phone } from 'phosphor-react';
 import ThemeInput from '../ThemeInput/ThemeInput';
 import ThemeBtn from '../ThemeBtn/ThemeBtn';
 
-
+import './ContactPage.scss';
 
 const ContactPage = () => {
   return (
-    <>
+    <Fragment>
         <HeaderInner 
             WrapperHeading="Contact Us"
         />
@@ -136,7 +137,7 @@ const ContactPage = () => {
         </section>
 
         <FAQSection />
-    </>
+    </Fragment>
   )
 }
 
