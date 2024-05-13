@@ -53,6 +53,9 @@
                     .menu_icon_otr{
                         display: none;
                         cursor: pointer;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
                         transition: .3s;
     
                         @media (max-width: 991px) {
@@ -69,177 +72,6 @@
                         svg{
                             color: $White;
                             transition: .3s;
-                        }
-                    }
-    
-                    .offcanvas{
-                        z-index: 999999;
-                        background-color: $bg1;
-    
-                        .logo_main{
-                            width: 100%;
-                            padding: 24px 0;
-                            border-bottom: 2px solid $Grey_shade;
-    
-                            .container_fluid{
-    
-                                .logo_otr{
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    width: 100%;
-    
-                                    .logo_inr{
-                                        width: 160px;
-                                        height: 35px;
-                                        
-                                        .brand_logo{
-                                            width: 100%;
-                                            height: 100%;
-                                            object-fit: contain;
-                                        }
-                                    }
-    
-                                    .close_icon_otr{
-                                        cursor: pointer;
-    
-                                        svg{
-                                            color: $White;
-                                            transition: .3s;
-    
-                                            &:hover{
-                                                color: $Primary_Color;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-    
-                        .container_fluid{
-    
-                            .offcanvas-body{
-                                
-                                .accordion{
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 12px;
-    
-                                    .menu_dropdown_Linkk{
-                                        color: $White;
-                                        transition: .3s;
-    
-                                        &:hover{
-                                            color: $Primary_Color;
-                                        }
-                                    }
-    
-                                    .accordion-item{
-                                        border: none;
-                                        background-color: transparent;
-    
-                                        .accordion-header{
-                                            border: none;
-    
-                                            .accordion-button{
-                                                padding: 8px 0 6px 0;
-                                                background-color: $bg1;
-                                                color: $White;
-                                                border-radius: 0;
-                                                border: none;
-    
-                                                &:hover{
-                                                    color: $Primary_Color;
-                                                }
-    
-                                                &::after{
-                                                    width: 18px;
-                                                    height: 18px;
-                                                    background-image: url('../../img/arrow-down.png');
-                                                    background-size: contain;
-                                                    background-position: center;
-                                                }
-    
-                                                &:focus{
-                                                    box-shadow: none;
-                                                }
-    
-                                                &:not(.collapsed){
-                                                    box-shadow: none;
-                                                }
-                                            }
-                                        }
-    
-                                        .accordion-collapse{
-                                            border: none;
-    
-                                            .accordion-body{
-                                                background-color: $bg1;
-                                                padding: 10px 10px 0 10px;
-                                                border: none;
-    
-                                                .drop_ul{
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    gap: 8px;
-    
-                                                    .drop_li{
-    
-                                                        .menu_linkk{
-                                                            
-                                                            span{
-                                                                color: $White;
-                                                                transition: .3s;
-    
-                                                                &:hover{
-                                                                    color: $Primary_Color;
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-    
-                            .social_ul{
-                                display: flex;
-                                align-items: center;
-                                gap: 0 24px;
-                                margin: 24px 0;
-        
-                                .social_li{
-    
-                                    .social_a{
-                                        transition: .3s;
-        
-                                        &:hover{
-    
-                                            svg{
-                                                color: $Primary_Color;
-                                            }
-                                        }
-        
-                                        svg{
-                                            color: $White;
-                                            transition: .3s;
-                                        }
-                                    }
-                                }
-                            }
-        
-                            .side_action_otr{
-                                width: 100%;
-        
-                                .explore_otr{
-    
-                                    .primary_btn{
-                                        width: 100%;
-                                    }
-                                }
-                            }
                         }
                     }
                 }
@@ -615,5 +447,183 @@
         height: calc(100% + 270px);
         left: 0;
         top: -270px;
+    }
+}
+
+.offcanvas{
+    z-index: 999999;
+    background-color: $bg1;
+
+    .offcanvas-header{
+        padding: 24px 15px;
+        border-bottom: 2px solid $Grey_shade;
+
+        .offcanvas-title{
+
+            .logo_inr{
+                width: 160px;
+                height: 35px;
+                
+                .brand_logo{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        
+        .btn-close{
+            filter: brightness(1) invert(1);
+            opacity: 1;
+
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+
+    .offcanvas-body{
+
+        .accordion{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .menu_dropdown_Linkk{
+                color: $White;
+                transition: .3s;
+
+                &:hover{
+                    color: $Primary_Color;
+                }
+            }
+
+            .accordion-item{
+                border: none;
+                background-color: transparent;
+
+                .accordion-header{
+                    border: none;
+
+                    .accordion-button{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0;
+                        background-color: $bg1;
+                        border-radius: 0;
+                        border: none;
+
+                        &:hover{
+
+                            span{
+                                color: $Primary_Color;
+                            }
+                        
+                            svg{
+                                color: $Primary_Color;
+                            }
+                        }
+
+                        &:not(.collapsed){
+                            box-shadow: none;
+
+                            svg{
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        span{
+                            color: $White;
+                            transition: .3s;
+                        }
+
+                        svg{
+                            color: $White;
+                            transition: .3s;
+                        }
+
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+
+                .accordion-collapse{
+                    border: none;
+
+                    .accordion-body{
+                        background-color: $bg1;
+                        padding: 10px 10px 0 10px;
+                        border: none;
+
+                        .drop_ul{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+
+                            .drop_li{
+
+                                .menu_linkk{
+                                    
+                                    span{
+                                        color: $White;
+                                        transition: .3s;
+
+                                        &:hover{
+                                            color: $Primary_Color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .social_ul{
+            display: flex;
+            align-items: center;
+            gap: 0 24px;
+            margin: 24px 0;
+
+            .social_li{
+
+                .social_a{
+                    transition: .3s;
+
+                    &:hover{
+
+                        svg{
+                            color: $Primary_Color;
+                        }
+                    }
+
+                    svg{
+                        color: $White;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+        .action_main{
+            display: flex;
+            flex-direction: column;
+            gap: 12px 0;
+
+            .action_otr{
+                width: 100%;
+
+                .explore_otr{
+                    width: 100%;
+
+                    button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
