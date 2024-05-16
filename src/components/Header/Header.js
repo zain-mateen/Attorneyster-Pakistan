@@ -186,6 +186,14 @@ const Header = () => {
                                 </Offcanvas.Body>
                             </Offcanvas>
                         </div>
+                        <div className='action_otr'>
+                            <Link className='explore_otr' to='/contact'>
+                                <ThemeBtn
+                                    ButtonClass="primary_btn"
+                                    ButtonText="Book a Consultation"
+                                />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
