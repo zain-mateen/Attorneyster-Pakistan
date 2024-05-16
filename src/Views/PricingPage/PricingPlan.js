@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn';
 
 import './PricingPage.scss';
 

@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 
-import PartnerSlider from '../PartnerSection/PartnerSlider';
+import PartnerSlider from '../../components/PartnerSection/PartnerSlider';
 import CasesBox from './CasesBox';
-import HeaderInner from '../Header/HeaderInner';
+import HeaderInner from '../../components/Header/HeaderInner';
 
 import './CasesPage.scss';
 

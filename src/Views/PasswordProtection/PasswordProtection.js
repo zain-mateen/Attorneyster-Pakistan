@@ -1,7 +1,7 @@
 import React from 'react'
 
-import ThemeInput from '../ThemeInput/ThemeInput'
-import ThemeBtn from '../ThemeBtn/ThemeBtn'
+import ThemeInput from '../../components/ThemeInput/ThemeInput'
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn'
 
 import './PasswordProtection.scss'
 

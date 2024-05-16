@@ -2,10 +2,10 @@ import React, { Fragment } from 'react'
 
 import { Envelope, Phone } from 'phosphor-react';
 
-import HeaderInner from '../Header/HeaderInner';
-import FAQSection from '../FAQSection/FAQSection';
-import ThemeInput from '../ThemeInput/ThemeInput';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
+import HeaderInner from '../../components/Header/HeaderInner';
+import FAQSection from '../../components/FAQSection/FAQSection';
+import ThemeInput from '../../components/ThemeInput/ThemeInput';
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn';
 
 import './ContactPage.scss';
 

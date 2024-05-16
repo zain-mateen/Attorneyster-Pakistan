@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 
-import HeaderInner from '../Header/HeaderInner';
+import HeaderInner from '../../components/Header/HeaderInner';
 import OfferBanner from './OfferBanner';
 import PricingPlan from './PricingPlan';
-import FAQSection from '../FAQSection/FAQSection';
+import FAQSection from '../../components/FAQSection/FAQSection';
 
 import './PricingPage.scss';
 

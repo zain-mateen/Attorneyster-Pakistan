@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom';
 
-import PartnerSlider from '../PartnerSection/PartnerSlider';
-import ThemeBtn from '../ThemeBtn/ThemeBtn';
+import PartnerSlider from '../../components/PartnerSection/PartnerSlider';
+import ThemeBtn from '../../components/ThemeBtn/ThemeBtn';
 
 import './CasesSinglePage.scss';
 
 import img from '../../img/cases-img2.png';
 import justiceImg from '../../img/justice-img.png';
-import HeaderInner from '../Header/HeaderInner';
+import HeaderInner from '../../components/Header/HeaderInner';
 
 
 const CasesSinglePage = () => {

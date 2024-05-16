@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom';
 
-import HeaderInner from '../Header/HeaderInner';
+import HeaderInner from '../../components/Header/HeaderInner';
 
 import './Licenses.scss';
 

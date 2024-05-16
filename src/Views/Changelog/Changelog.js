@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-import HeaderInner from '../Header/HeaderInner';
+import HeaderInner from '../../components/Header/HeaderInner';
 
 import './Changelog.scss'
 

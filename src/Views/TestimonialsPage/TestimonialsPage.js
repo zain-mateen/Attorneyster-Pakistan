@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
 
 import TestimonialsPageBox from './TestimonialsPageBox';
-import ContactSection from '../ContactSection/ContactSection';
-import ContactFormSection from '../ContactFormSection/ContactFormSection';
+import ContactSection from '../../components/ContactSection/ContactSection';
+import ContactFormSection from '../../components/ContactFormSection/ContactFormSection';
 
 
 import './TestimonialsPage.scss';
 
 import Creator from '../../img/Creator.png';
-import HeaderInner from '../Header/HeaderInner';
+import HeaderInner from '../../components/Header/HeaderInner';
 
 const TestimonialsPage = () => {
     return (
